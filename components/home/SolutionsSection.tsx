@@ -15,7 +15,7 @@ export default function SolutionsSection() {
                 <div className="order-2 lg:order-2 text-right">
                     <Reveal variant="fadeRight">
                         <div className="flex items-center gap-4 mb-6">
-                            <div className="h-px flex-1 bg-gradient-to-l from-[#2E7CC4] to-transparent opacity-50" />
+
                             <span className="text-[#2E7CC4] text-sm font-semibold tracking-wider uppercase">תחום התמחות</span>
                         </div>
 

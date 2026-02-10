@@ -180,7 +180,7 @@ export function BorealisBackground({ className, intensity = 1 }: BorealisBackgro
             ctx.stroke();
             ctx.restore();
 
-            // Add a thin “core” (very subtle)
+            /* Add a thin “core” (very subtle) - DISABLED to remove potential scanline artifacts
             ctx.save();
             ctx.globalAlpha = ribbonAlpha * 0.45;
             ctx.globalCompositeOperation = "lighter";
@@ -201,6 +201,7 @@ export function BorealisBackground({ className, intensity = 1 }: BorealisBackgro
             }
             ctx.stroke();
             ctx.restore();
+            */
         };
 
         const drawFocusGlow = (focusY: number, focusStrength: number) => {

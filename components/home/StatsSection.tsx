@@ -77,7 +77,7 @@ export default function StatsSection() {
             ref={sectionRef}
             variant="band"
             padding="tight"
-            className="border-b border-white/5"
+            className=""
         >
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
                 {stats.map((stat) => {
