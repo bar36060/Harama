@@ -54,7 +54,7 @@ import { Reveal } from "@/components/motion/Reveal";
 
 export default function ValuesSection() {
     return (
-        <Section variant="glow" dividerTop>
+        <Section variant="glow">
             {/* Note: variant="glow" adds a subtle radial burst behind content */}
             {/* Enterprise Section Header - Centered */}
             <Reveal className="w-full">

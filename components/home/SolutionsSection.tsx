@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 
 export default function SolutionsSection() {
     return (
-        <Section variant="band" dividerTop padding="loose" className="overflow-hidden">
+        <Section variant="band" padding="loose" className="overflow-hidden">
             <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
 
                 {/* Content Side (Right visually) */}

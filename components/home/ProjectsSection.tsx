@@ -26,7 +26,7 @@ const projects: Project[] = [haifaData, raananaData, telAvivData].sort(
 
 export default function ProjectsSection() {
     return (
-        <Section variant="wave" dividerTop>
+        <Section variant="wave">
             {/* Enterprise Section Header - Centered */}
             <Reveal className="w-full">
                 <div className="mb-20 text-center mx-auto max-w-3xl" style={{ marginBottom: '80px' }}>

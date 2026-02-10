@@ -30,7 +30,7 @@ export default function Footer() {
         <SectionBand
             as="footer"
             size="compact"
-            className="bg-base-deepest border-t border-neutral-600"
+            className="bg-base-deepest border-t border-neutral-600 mb-0"
         >
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
                 {/* Company Info */}

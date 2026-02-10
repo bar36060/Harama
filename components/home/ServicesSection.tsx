@@ -34,7 +34,7 @@ export default function ServicesSection() {
     const [activeService, setActiveService] = useState<Service>(services[0]);
 
     return (
-        <Section variant="default" dividerTop padding="tight">
+        <Section variant="default" padding="tight">
             <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-stretch">
 
                 {/* Right Column: Service List (RTL) */}

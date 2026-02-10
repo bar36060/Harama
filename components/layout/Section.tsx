@@ -51,11 +51,15 @@ export const Section = forwardRef<HTMLElement, SectionProps>(
             fluid: "max-w-full px-4 md:px-8",
         };
 
+        // Margin logic - hero gets no margin, others get top and bottom
+        const marginClasses = variant === "hero" ? "" : "my-10";
+
         return (
             <Component
                 ref={ref as any}
                 className={cn(
-                    "relative w-full overflow-hidden transition-colors duration-500 isolate my-10",
+                    "relative w-full overflow-hidden transition-colors duration-500 isolate",
+                    marginClasses,
                     paddingClasses[padding],
                     className
                 )}

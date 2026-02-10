@@ -20,7 +20,7 @@ export default function ContactBanner() {
     };
 
     return (
-        <Section variant="default" padding="loose" dividerTop className="bg-[#0A0E1A]">
+        <Section variant="default" padding="loose" className="bg-[#0A0E1A]">
             <div className="grid lg:grid-cols-12 gap-12 lg:gap-24 items-start">
                 {/* Content Side (Right in RTL) */}
                 <div className="lg:col-span-5 pt-8">
