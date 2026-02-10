@@ -48,12 +48,12 @@ const capabilitiesTabs = [
 
 export default function CapabilitiesSection() {
     return (
-        <Section variant="glow" padding="loose" dividerTop>
-            <div className="mb-20 text-center mx-auto max-w-3xl">
-                <div className="text-sm font-semibold text-[#2E7CC4] mb-3 tracking-wide">
+        <Section variant="glow" padding="tight" dividerTop>
+            <div className="mb-8 text-center mx-auto max-w-3xl">
+                <div className="text-sm font-semibold text-[#2E7CC4] mb-2 tracking-wide">
                     היכולות שלנו
                 </div>
-                <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+                <h2 className="text-3xl md:text-4xl font-bold text-white mb-3">
                     ביצוע מושלם בכל שלב
                 </h2>
             </div>

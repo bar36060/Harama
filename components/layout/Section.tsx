@@ -37,11 +37,11 @@ export const Section = forwardRef<HTMLElement, SectionProps>(
         },
         ref
     ) => {
-        // Padding logic (Responsive)
+        // Padding logic (Responsive) - Reduced for compact layout
         const paddingClasses = {
-            tight: "py-12 md:py-16",
-            normal: "py-16 md:py-24 lg:py-32",
-            loose: "py-24 md:py-32 lg:py-40",
+            tight: "py-8 md:py-10",
+            normal: "py-10 md:py-14 lg:py-18",
+            loose: "py-14 md:py-18 lg:py-24",
         };
 
         // Container width logic

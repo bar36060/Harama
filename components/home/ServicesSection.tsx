@@ -34,20 +34,20 @@ export default function ServicesSection() {
     const [activeService, setActiveService] = useState<Service>(services[0]);
 
     return (
-        <Section variant="default" dividerTop padding="loose">
-            <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-stretch">
+        <Section variant="default" dividerTop padding="tight">
+            <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-stretch">
 
                 {/* Right Column: Service List (RTL) */}
                 <div className="order-2 lg:order-1 flex flex-col justify-center">
                     <Reveal className="w-full">
-                        <div className="mb-12">
-                            <div className="text-sm font-semibold text-[#2E7CC4] mb-3 tracking-wide">
+                        <div className="mb-8">
+                            <div className="text-sm font-semibold text-[#2E7CC4] mb-2 tracking-wide">
                                 השירותים שלנו
                             </div>
-                            <h2 className="text-4xl md:text-5xl font-bold font-heading text-white mb-6 leading-tight">
+                            <h2 className="text-3xl md:text-4xl font-bold font-heading text-white mb-4 leading-tight">
                                 פתרונות ביצוע <br className="hidden md:block" /> פרימיום
                             </h2>
-                            <p className="text-lg text-neutral-400 max-w-md">
+                            <p className="text-base md:text-lg text-neutral-400 max-w-md">
                                 מעטפת ביצועית המשלבת ציוד מתקדם, הנדסה מדויקת וניסיון של עשרות שנים.
                             </p>
                         </div>
@@ -103,7 +103,7 @@ export default function ServicesSection() {
                 </div>
 
                 {/* Left Column: Image Preview (sticky on desktop) */}
-                <div className="order-1 lg:order-2 lg:sticky lg:top-32 h-[400px] lg:h-[600px] rounded-3xl overflow-hidden relative shadow-2xl border border-white/10 bg-[#05080F]">
+                <div className="order-1 lg:order-2 lg:sticky lg:top-32 h-[350px] lg:h-[450px] rounded-3xl overflow-hidden relative shadow-2xl border border-white/10 bg-[#05080F]">
                     <AnimatePresence mode="popLayout">
                         <motion.div
                             key={activeService.id}

@@ -58,27 +58,26 @@ export default function ValuesSection() {
             {/* Note: variant="glow" adds a subtle radial burst behind content */}
             {/* Enterprise Section Header - Centered */}
             <Reveal className="w-full">
-                <div className="mb-20 text-center mx-auto max-w-3xl" style={{ marginBottom: '80px' }}>
-                    <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">הערכים שלנו</h2>
+                <div className="mb-10 text-center mx-auto max-w-3xl">
+                    <h2 className="text-3xl md:text-4xl font-bold text-white mb-3">הערכים שלנו</h2>
                 </div>
             </Reveal>
 
             {/* Values Grid */}
-            <div className="grid md:grid-cols-3 gap-12">
+            <div className="grid md:grid-cols-3 gap-8">
                 {values.map((value, index) => (
                     <Reveal key={value.id} delay={index * 0.1} variant="fadeUp" className="h-full">
                         <div
                             className="
-              bg-[#151B2E] rounded-lg p-10
+              bg-[#151B2E] rounded-lg p-6
               border border-[#2D3748]
               hover:border-[#2E7CC4] transition-colors duration-300 h-full
             "
-                            style={{ padding: '40px' }}
                         >
-                            <div className="w-16 h-16 bg-[#2E7CC4]/10 rounded-full flex items-center justify-center text-[#2E7CC4] mb-6" style={{ marginBottom: '24px' }}>
+                            <div className="w-14 h-14 bg-[#2E7CC4]/10 rounded-full flex items-center justify-center text-[#2E7CC4] mb-4">
                                 {value.icon}
                             </div>
-                            <h3 className="text-2xl font-bold text-white mb-4">{value.title}</h3>
+                            <h3 className="text-xl font-bold text-white mb-3">{value.title}</h3>
                             <p className="text-neutral-300 leading-relaxed">{value.description}</p>
                         </div>
                     </Reveal>
