@@ -55,7 +55,7 @@ export const Section = forwardRef<HTMLElement, SectionProps>(
             <Component
                 ref={ref as any}
                 className={cn(
-                    "relative w-full overflow-hidden transition-colors duration-500 isolate",
+                    "relative w-full overflow-hidden transition-colors duration-500 isolate my-10",
                     paddingClasses[padding],
                     className
                 )}
