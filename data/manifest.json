@@ -1,0 +1,18 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2026-02-09T18:49:58Z",
+  "entities": {
+    "services": ["earthworks", "infrastructure", "roads"],
+    "projects": [
+      "project-raanana-residential",
+      "project-tel-aviv-water",
+      "project-haifa-road",
+      "project-jerusalem-excavation",
+      "project-beer-sheva-sewage",
+      "project-ashdod-industrial"
+    ],
+    "stats": ["years", "projects-completed", "on-time-percentage", "equipment"],
+    "capabilities": ["execution", "equipment", "safety", "management"],
+    "clients": []
+  }
+}

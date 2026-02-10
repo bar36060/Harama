@@ -1,0 +1,8 @@
+{
+    "id": "projects-completed",
+    "label": "פרויקטים שהושלמו",
+    "value": 480,
+    "suffix": "+",
+    "animate": true,
+    "order": 2
+}

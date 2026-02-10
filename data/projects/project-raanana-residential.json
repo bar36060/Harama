@@ -1,0 +1,46 @@
+{
+    "id": "project-raanana-residential",
+    "slug": "raanana-residential-development",
+    "title": "פרויקט מגורים ברעננה",
+    "shortSummary": "חפירה ותשתיות למתחם מגורים חדש בן 200 יחידות בצפון רעננה",
+    "location": "רעננה",
+    "category": "earthworks",
+    "year": 2025,
+    "tags": [
+        "חפירות עומק",
+        "תשתיות מים"
+    ],
+    "challenge": "פרויקט מגורים מורכב הדורש חפירות עומק ותשתיות מים וביוב מלאות",
+    "solution": "ביצענו חפירות בהיקף של 15,000 מ״ר עם טיפול בקרקעות בעייתיות והתקנת תשתיות חדשות",
+    "results": [
+        "הושלם בזמן תוך 8 חודשים",
+        "חיסכון של 12% בתקציב",
+        "אישור מהיר מהרשויות"
+    ],
+    "metrics": [
+        {
+            "label": "שטח",
+            "value": "15,000 מ״ר"
+        },
+        {
+            "label": "משך",
+            "value": "8 חודשים"
+        }
+    ],
+    "heroMedia": {
+        "url": "https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=1200&q=80",
+        "alt": "אתר הפרויקט ברעננה"
+    },
+    "gallery": [],
+    "relatedServices": [
+        "earthworks",
+        "infrastructure"
+    ],
+    "seo": {
+        "metaTitle": "פרויקט מגורים ברעננה | הרמה",
+        "metaDescription": "חפירות ותשתיות למתחם מגורים בן 200 יחידות ברעננה"
+    },
+    "isFeatured": true,
+    "order": 1,
+    "status": "published"
+}

@@ -1,0 +1,30 @@
+{
+    "id": "roads",
+    "slug": "roads",
+    "title": "סלילת כבישים ואספלט",
+    "shortSummary": "סלילה, אספלט ושיקום כבישים לפרויקטים עירוניים ואזוריים.",
+    "description": "מבצעים פרויקטי סלילה מקצועיים - מכבישים עירוניים ועד דרכים אזוריות, כולל שיקום ותחזוקה.",
+    "bulletPoints": [
+        "סלילת כבישים עירוניים ואזוריים",
+        "אספלט איכותי ועמיד",
+        "שיקום ותחזוקת כבישים"
+    ],
+    "featuredImage": {
+        "url": "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=1200&q=80",
+        "alt": "סלילת כביש"
+    },
+    "gallery": [],
+    "primaryCTA": {
+        "label": "לפרטים",
+        "url": "/services/roads"
+    },
+    "relatedProjects": [
+        "project-haifa-road"
+    ],
+    "seo": {
+        "metaTitle": "סלילת כבישים ואספלט | הרמה",
+        "metaDescription": "שירותי סלילה ואספלט מקצועיים לכבישים עירוניים ואזוריים"
+    },
+    "order": 3,
+    "status": "published"
+}

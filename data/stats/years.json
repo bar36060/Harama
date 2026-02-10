@@ -1,0 +1,8 @@
+{
+    "id": "years",
+    "label": "שנות ניסיון",
+    "value": 20,
+    "suffix": "+",
+    "animate": true,
+    "order": 1
+}

@@ -1,0 +1,36 @@
+{
+    "id": "project-haifa-road",
+    "slug": "haifa-road-paving",
+    "title": "סלילת כביש בחיפה",
+    "shortSummary": "סלילת כביש איזורי חדש באזור המפרץ בחיפה",
+    "location": "חיפה",
+    "category": "roads",
+    "year": 2024,
+    "tags": [
+        "סלילה",
+        "כבישים אזוריים"
+    ],
+    "challenge": "סלילת 4 ק״מ כביש חדש בשטח מאתגר עם שיפועים תלולים",
+    "solution": "תכנון קפדני של עבודות עפר ושימוש באספלט מיוחד לשיפועים",
+    "results": [
+        "4 ק״מ כביש חדש",
+        "עמידות גבוהה לתנאי מזג אוויר",
+        "הושלם בתקציב המתוכנן"
+    ],
+    "heroMedia": {
+        "url": "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=1200&q=80",
+        "alt": "כביש חדש בחיפה"
+    },
+    "gallery": [],
+    "relatedServices": [
+        "roads",
+        "earthworks"
+    ],
+    "seo": {
+        "metaTitle": "סלילת כביש בחיפה | הרמה",
+        "metaDescription": "סלילת כביש איזורי 4 ק״מ באזור המפרץ"
+    },
+    "isFeatured": true,
+    "order": 3,
+    "status": "published"
+}

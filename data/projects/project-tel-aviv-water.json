@@ -1,0 +1,35 @@
+{
+    "id": "project-tel-aviv-water",
+    "slug": "tel-aviv-water-infrastructure",
+    "title": "תשתיות מים בתל אביב",
+    "shortSummary": "שדרוג מערכת מים ראשית באזור תעשייה בדרום תל אביב",
+    "location": "תל אביב",
+    "category": "infrastructure",
+    "year": 2024,
+    "tags": [
+        "תשתיות מים",
+        "אזור תעשייה"
+    ],
+    "challenge": "החלפת תשתיות מים ישנות באזור תעשייה פעיל ללא הפרעה לפעילות",
+    "solution": "עבודות לילה מתואמות עם עסקים והתקנת קווי מים חדשים בקוטר 500 מ״מ",
+    "results": [
+        "0 ימי השבתה לעסקים",
+        "הושלם 3 שבועות לפני הזמן",
+        "100% עמידה בתקני איכות"
+    ],
+    "heroMedia": {
+        "url": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&q=80",
+        "alt": "עבודות תשתית בתל אביב"
+    },
+    "gallery": [],
+    "relatedServices": [
+        "infrastructure"
+    ],
+    "seo": {
+        "metaTitle": "תשתיות מים בתל אביב | הרמה",
+        "metaDescription": "שדרוג מערכת מים באזור תעשייה בדרום תל אביב"
+    },
+    "isFeatured": true,
+    "order": 2,
+    "status": "published"
+}
