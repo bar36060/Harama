@@ -9,12 +9,12 @@ import { motion } from "framer-motion";
 export default function SolutionsSection() {
     return (
         <Section variant="band" padding="loose" className="overflow-hidden">
-            <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center">
 
                 {/* Content Side (Right visually) */}
-                <div className="order-2 lg:order-2 text-right">
-                    <Reveal variant="fadeRight">
-                        <div className="flex items-center gap-4 mb-6">
+                <div className="order-2 lg:order-2 text-center lg:text-right px-4 md:px-0">
+                    <Reveal variant="fadeUp">
+                        <div className="flex items-center justify-center lg:justify-start gap-4 mb-6">
 
                             <span className="text-[#2E7CC4] text-sm font-semibold tracking-wider uppercase">תחום התמחות</span>
                         </div>
@@ -26,7 +26,7 @@ export default function SolutionsSection() {
                             </span>
                         </h2>
 
-                        <p className="text-lg md:text-xl text-blue-100/80 leading-relaxed mb-10 max-w-xl ml-auto">
+                        <p className="text-lg md:text-xl text-blue-100/80 leading-relaxed mb-10 max-w-xl mx-auto lg:mr-0">
                             מחפירות עומק ועד תשתיות מים וביוב, דרך סלילת כבישים ופיתוח שטחים —
                             <br className="hidden md:block" />
                             אנו מספקים מעטפת ביצועית מלאה, המשלבת דיוק הנדסי, עוצמה טכנולוגית ועמידה בלתי מתפשרת בלוחות זמנים.
@@ -45,7 +45,7 @@ export default function SolutionsSection() {
                 </div>
 
                 {/* Images Side (Left visually) - "Messy but Organized" Collage */}
-                <div className="order-1 lg:order-1 relative h-[600px] w-full flex items-center justify-center lg:justify-start perspective-[1000px]">
+                <div className="order-1 lg:order-1 relative h-[400px] sm:h-[500px] lg:h-[600px] w-full flex items-center justify-center lg:justify-start perspective-[1000px]">
                     {/* Decorative Background Blob */}
                     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-blue-600/10 blur-3xl rounded-full -z-10" />
 

@@ -35,19 +35,19 @@ export default function ServicesSection() {
 
     return (
         <Section variant="default" padding="tight">
-            <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-stretch">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-stretch">
 
                 {/* Right Column: Service List (RTL) */}
                 <div className="order-2 lg:order-1 flex flex-col justify-center">
                     <Reveal className="w-full">
-                        <div className="mb-8">
+                        <div className="mb-8 text-center lg:text-right px-4 md:px-0">
                             <div className="text-sm font-semibold text-[#2E7CC4] mb-2 tracking-wide">
                                 השירותים שלנו
                             </div>
                             <h2 className="text-3xl md:text-4xl font-bold font-heading text-white mb-4 leading-tight">
                                 פתרונות ביצוע <br className="hidden md:block" /> פרימיום
                             </h2>
-                            <p className="text-base md:text-lg text-neutral-400 max-w-md">
+                            <p className="text-base md:text-lg text-neutral-400 max-w-md mx-auto lg:mr-0">
                                 מעטפת ביצועית המשלבת ציוד מתקדם, הנדסה מדויקת וניסיון של עשרות שנים.
                             </p>
                         </div>

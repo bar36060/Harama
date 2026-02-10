@@ -29,27 +29,29 @@ export function CapabilitiesTabs({ tabs }: CapabilitiesTabsProps) {
 
     return (
         <div className="flex flex-col gap-8">
-            {/* 1. Tabs Navigation (Pills) */}
-            <div className="flex flex-wrap justify-center gap-2 md:gap-4 p-1.5 bg-white/5 backdrop-blur-sm rounded-full w-fit mx-auto border border-white/10">
-                {tabs.map((tab) => (
-                    <button
-                        key={tab.id}
-                        onClick={() => setActiveTab(tab.id)}
-                        className={cn(
-                            "relative px-5 py-2 rounded-full text-sm md:text-base font-medium transition-colors duration-300 z-10",
-                            activeTab === tab.id ? "text-white" : "text-neutral-400 hover:text-white"
-                        )}
-                    >
-                        {activeTab === tab.id && (
-                            <motion.div
-                                layoutId="activeTabPill"
-                                className="absolute inset-0 bg-[#2E7CC4] rounded-full -z-10 shadow-[0_0_20px_rgba(46,124,196,0.3)]"
-                                transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
-                            />
-                        )}
-                        {tab.label}
-                    </button>
-                ))}
+            {/* 1. Tabs Navigation (Pills) - Responsive Scroll */}
+            <div className="w-full overflow-x-auto scrollbar-hide pb-4 -mx-4 px-4 md:mx-0 md:px-0 flex justify-start md:justify-center">
+                <div className="flex flex-nowrap gap-2 md:gap-4 p-1.5 bg-white/5 backdrop-blur-sm rounded-full w-fit border border-white/10 shrink-0">
+                    {tabs.map((tab) => (
+                        <button
+                            key={tab.id}
+                            onClick={() => setActiveTab(tab.id)}
+                            className={cn(
+                                "relative px-5 py-2 rounded-full text-sm md:text-base font-medium transition-colors duration-300 z-10",
+                                activeTab === tab.id ? "text-white" : "text-neutral-400 hover:text-white"
+                            )}
+                        >
+                            {activeTab === tab.id && (
+                                <motion.div
+                                    layoutId="activeTabPill"
+                                    className="absolute inset-0 bg-[#2E7CC4] rounded-full -z-10 shadow-[0_0_20px_rgba(46,124,196,0.3)]"
+                                    transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
+                                />
+                            )}
+                            {tab.label}
+                        </button>
+                    ))}
+                </div>
             </div>
 
             {/* 2. Content Panel - Reduced Height */}
@@ -111,7 +113,7 @@ export function CapabilitiesTabs({ tabs }: CapabilitiesTabsProps) {
                         </div>
 
                         {/* Right: Image (RTL: Left side visually) */}
-                        <div className="order-1 lg:order-2 relative h-[250px] lg:h-[320px] rounded-2xl overflow-hidden shadow-2xl">
+                        <div className="order-1 lg:order-2 relative h-[200px] sm:h-[250px] lg:h-[320px] rounded-2xl overflow-hidden shadow-2xl">
                             <motion.div
                                 initial={{ scale: 1.1, opacity: 0 }}
                                 animate={{ scale: 1, opacity: 1 }}

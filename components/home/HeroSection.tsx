@@ -177,8 +177,8 @@ export default function HeroSection() {
         >
             {/* Content */}
             <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 w-full" >
-                <div className="lg:col-start-1 lg:col-span-8 flex items-center">
-                    <div className="max-w-[800px] mr-auto">
+                <div className="lg:col-start-1 lg:col-span-8 flex items-center justify-center lg:justify-start">
+                    <div className="max-w-[800px] text-center lg:text-right mr-auto">
                         <AnimatePresence mode="wait">
                             <motion.div
                                 key={currentSlide}
@@ -188,7 +188,7 @@ export default function HeroSection() {
                                 transition={{ duration: 0.6, delay: 0.2 }}
                             >
                                 {/* Headline */}
-                                <h1 className="text-5xl md:text-7xl font-extrabold text-white mb-6 leading-[1.1] tracking-tight drop-shadow-lg">
+                                <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold text-white mb-6 leading-[1.1] tracking-tight drop-shadow-lg">
                                     {slides[currentSlide].headline}
                                 </h1>
 
@@ -197,7 +197,7 @@ export default function HeroSection() {
                                     initial={{ opacity: 0, y: 20 }}
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ duration: 0.6, delay: 0.4 }}
-                                    className="text-xl md:text-2xl text-neutral-200 mb-10 leading-relaxed font-light max-w-2xl"
+                                    className="text-lg md:text-2xl text-neutral-200 mb-10 leading-relaxed font-light max-w-2xl mx-auto lg:mr-0"
                                 >
                                     {slides[currentSlide].subtitle}
                                 </motion.p>
@@ -207,7 +207,7 @@ export default function HeroSection() {
                                     initial={{ opacity: 0, y: 20 }}
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ duration: 0.6, delay: 0.6 }}
-                                    className="flex flex-wrap gap-4 mb-14"
+                                    className="flex flex-wrap justify-center lg:justify-start gap-4 mb-14"
                                 >
                                     <Link href={slides[currentSlide].primaryCTA.href}>
                                         <Button size="lg" className="text-lg px-10 shadow-xl shadow-blue-900/20">
@@ -228,7 +228,7 @@ export default function HeroSection() {
                                     initial={{ opacity: 0 }}
                                     animate={{ opacity: 1 }}
                                     transition={{ duration: 0.8, delay: 0.8 }}
-                                    className="flex flex-wrap gap-6 text-sm text-neutral-300 font-medium border-t border-white/10 pt-8"
+                                    className="flex flex-wrap justify-center lg:justify-start gap-4 md:gap-6 text-sm text-neutral-300 font-medium border-t border-white/10 pt-8"
                                 >
                                     {slides[currentSlide].bullets.map((bullet, idx) => (
                                         <div key={idx} className="flex items-center gap-2">

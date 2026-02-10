@@ -91,7 +91,7 @@ export default function StatsSection() {
                             key={stat.id}
                             className="relative flex flex-col items-center justify-center text-center p-6 aspect-square rounded-2xl bg-white/5 backdrop-blur-md border border-white/10 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] hover:bg-white/10 transition-colors duration-300"
                         >
-                            <div className="text-4xl md:text-6xl font-extrabold font-heading text-white mb-2 tabular-nums leading-none tracking-tight">
+                            <div className="text-2xl md:text-5xl font-extrabold font-heading text-white mb-2 tabular-nums leading-none">
                                 {stat.prefix}
                                 {displayValue}
                                 {stat.suffix && (

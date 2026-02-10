@@ -29,7 +29,7 @@ export default function ProjectsSection() {
         <Section variant="wave">
             {/* Enterprise Section Header - Centered */}
             <Reveal className="w-full">
-                <div className="mb-20 text-center mx-auto max-w-3xl" style={{ marginBottom: '80px' }}>
+                <div className="mb-12 md:mb-20 text-center mx-auto max-w-3xl">
                     <div className="text-sm font-semibold text-[#2E7CC4] mb-3 tracking-wide">
                         הפרויקטים שלנו
                     </div>
@@ -40,7 +40,7 @@ export default function ProjectsSection() {
             </Reveal>
 
             {/* Projects Grid */}
-            <div className="grid md:grid-cols-3 gap-8 md:gap-12">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
                 {projects.map((project, index) => (
                     <Reveal key={project.slug} delay={index * 0.1} variant="fadeUp">
                         <Link
@@ -64,7 +64,7 @@ export default function ProjectsSection() {
                             </div>
 
                             {/* Content */}
-                            <div className="p-10" style={{ padding: '40px' }}>
+                            <div className="p-6 md:p-8 lg:p-10">
                                 <h3 className="text-2xl font-bold text-white mb-4">{project.title}</h3>
                                 <p className="text-neutral-300 leading-relaxed mb-6">{project.shortSummary}</p>
                                 <span className="inline-flex items-center gap-2 text-[#2E7CC4] font-medium">

@@ -3,6 +3,8 @@
 import { useState } from "react";
 import { Section } from "@/components/layout/Section";
 import { Reveal } from "@/components/motion/Reveal";
+import { Button } from "@/components/ui/Button";
+import Link from "next/link";
 
 export default function ContactBanner() {
     const [formData, setFormData] = useState({
@@ -87,10 +89,26 @@ export default function ContactBanner() {
                     </div>
                 </div>
 
-                {/* Form Side (Left in RTL) */}
+                {/* Form Side (Left in RTL) - Hidden on Mobile, Visible on Tablet+ */}
                 <div className="lg:col-span-7">
                     <Reveal delay={0.5} variant="fadeLeft" className="w-full">
-                        <form onSubmit={handleSubmit} className="bg-[#151B2E] rounded-3xl border border-[#2D3748] shadow-2xl" style={{ padding: '40px', marginBottom: '40px' }}>
+                        {/* Mobile Display: Large Button instead of long form */}
+                        <div className="md:hidden mb-12">
+                            <Link href="/contact" className="block">
+                                <Button
+                                    size="lg"
+                                    className="w-full text-xl py-8 bg-[#2E7CC4] hover:bg-[#1A5A9C] text-white rounded-2xl font-bold shadow-2xl shadow-blue-500/30 flex items-center justify-center gap-3 transition-all active:scale-[0.98]"
+                                >
+                                    מעבר לטופס יצירת קשר
+                                    <svg className="w-6 h-6 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                    </svg>
+                                </Button>
+                            </Link>
+                        </div>
+
+                        {/* Tablet/Desktop Display: Inline Form */}
+                        <form onSubmit={handleSubmit} className="hidden md:block bg-[#151B2E] rounded-3xl border border-[#2D3748] shadow-2xl" style={{ padding: '40px', marginBottom: '40px' }}>
                             <div className="grid md:grid-cols-2 gap-4 mb-6">
                                 <div>
                                     <label htmlFor="name" className="block text-sm font-medium text-neutral-300 mb-2">

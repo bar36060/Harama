@@ -39,7 +39,7 @@ export default function Header() {
                     ? "bg-[#0A0E1A]/95 backdrop-blur-md border-b border-[#1A2238]"
                     : "bg-gradient-to-b from-black/40 to-transparent border-b border-transparent"
                 }
-        h-20
+        h-16 md:h-20
       `}
         >
             <div className="container max-w-[1440px] h-full">
@@ -49,7 +49,7 @@ export default function Header() {
                         href="/"
                         className="flex items-center gap-3 group"
                     >
-                        <span className="text-3xl font-bold text-white group-hover:text-[#2E7CC4] transition-colors duration-200">
+                        <span className="text-2xl md:text-3xl font-bold text-white group-hover:text-[#2E7CC4] transition-colors duration-200">
                             הרמה
                         </span>
                     </Link>

@@ -30,9 +30,9 @@ export default function Footer() {
         <SectionBand
             as="footer"
             size="compact"
-            className="bg-base-deepest border-t border-neutral-600"
+            className="bg-base-deepest border-t border-neutral-600 px-4 md:px-0"
         >
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
                 {/* Company Info */}
                 <div>
                     <h3 className="text-2xl font-bold text-white mb-4">הרמה</h3>
