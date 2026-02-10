@@ -33,6 +33,16 @@ const services: Service[] = [
 export default function ServicesSection() {
     const [activeService, setActiveService] = useState<Service>(services[0]);
 
+    const handleServiceClick = (e: React.MouseEvent, service: Service) => {
+        // Only intercept on mobile/tablet (less than lg breakpoint)
+        if (typeof window !== "undefined" && window.innerWidth < 1024) {
+            if (activeService.id !== service.id) {
+                e.preventDefault();
+                setActiveService(service);
+            }
+        }
+    };
+
     return (
         <Section variant="default" padding="tight">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-stretch">
@@ -60,6 +70,7 @@ export default function ServicesSection() {
                                     href={`/services/${service.slug}`}
                                     className="group block relative"
                                     onMouseEnter={() => setActiveService(service)}
+                                    onClick={(e) => handleServiceClick(e, service)}
                                 >
                                     <div
                                         className={cn(
@@ -78,7 +89,7 @@ export default function ServicesSection() {
                                             </h3>
                                             <ArrowLeft className={cn(
                                                 "w-6 h-6 transition-all duration-300 opacity-0 -translate-x-4",
-                                                activeService.id === service.id ? "opacity-100 translate-x-0 text-[#2E7CC4]" : ""
+                                                activeService.id === service.id ? "opacity-100 translate-x-0 text-[#2E7CC4]" : "md:group-hover:opacity-100 md:group-hover:translate-x-0"
                                             )} />
                                         </div>
 
@@ -90,9 +101,15 @@ export default function ServicesSection() {
                                                 <p className="text-neutral-400 leading-relaxed text-base md:text-lg pl-8">
                                                     {service.shortSummary}
                                                 </p>
-                                                <span className="inline-block mt-4 text-sm font-medium text-[#2E7CC4] border-b border-[#2E7CC4]/30 pb-0.5">
-                                                    למידע נוסף
-                                                </span>
+                                                <div className="flex items-center mt-4 gap-2">
+                                                    <span className="text-sm font-medium text-[#2E7CC4] border-b border-[#2E7CC4]/30 pb-0.5">
+                                                        למידע נוסף
+                                                    </span>
+                                                    {/* Hint for mobile users */}
+                                                    <span className="text-[10px] text-neutral-600 lg:hidden font-medium uppercase tracking-widest">
+                                                        (לחץ שוב לכניסה)
+                                                    </span>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>

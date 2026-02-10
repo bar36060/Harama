@@ -4,6 +4,7 @@ import "./globals.css";
 import CookieConsent from "@/components/CookieConsent";
 import { BorealisBackground } from "@/components/ui/BorealisBackground";
 import { CursorHalo } from "@/components/motion/CursorHalo";
+import SmoothScroll from "@/components/providers/SmoothScroll";
 
 const rubik = Rubik({
   subsets: ["hebrew", "latin"],
@@ -45,10 +46,12 @@ export default function RootLayout({
   return (
     <html lang="he" dir="rtl" suppressHydrationWarning>
       <body className={`${rubik.variable} ${assistant.variable}`} suppressHydrationWarning>
-        <CursorHalo />
-        <BorealisBackground />
-        {children}
-        <CookieConsent />
+        <SmoothScroll>
+          <CursorHalo />
+          <BorealisBackground />
+          {children}
+          <CookieConsent />
+        </SmoothScroll>
       </body>
     </html>
   );

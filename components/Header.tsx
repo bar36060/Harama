@@ -117,41 +117,66 @@ export default function Header() {
                 </div>
             </div>
 
-            {/* Mobile Menu - Slide Down */}
+            {/* Mobile Menu - Full Screen Overlay */}
             {isMobileMenuOpen && (
-                <div
-                    className="
-            lg:hidden bg-[#151B2E] border-t border-[#2D3748]
-            animate-[slideDown_280ms_ease-out]
-          "
-                >
-                    <nav className="container max-w-[1440px] py-6 flex flex-col gap-4">
-                        {navItems.map((item) => (
-                            <Link
-                                key={item.href}
-                                href={item.href}
-                                className="
-                  text-neutral-300 hover:text-white
-                  transition-colors duration-200
-                  py-2 text-base font-medium
-                "
-                                onClick={() => setIsMobileMenuOpen(false)}
-                            >
-                                {item.label}
-                            </Link>
-                        ))}
-                        <Link
-                            href="/contact"
-                            className="
-                mt-4 px-6 py-3 bg-[#2E7CC4] text-white
-                rounded-md text-center font-medium
-                hover:bg-[#4A94D9] transition-colors duration-200
-              "
+                <div className="fixed inset-0 z-[100] md:hidden">
+                    {/* Backdrop with Blur */}
+                    <div
+                        className="absolute inset-0 bg-black/60 backdrop-blur-xl animate-menu-fade-in"
+                        onClick={() => setIsMobileMenuOpen(false)}
+                    />
+
+                    {/* Menu Content (Drawer from Right) */}
+                    <div className="absolute top-0 right-0 h-full w-[80%] max-w-[400px] glass-menu shadow-2xl animate-menu-slide-in flex flex-col p-8 pt-24 overflow-y-auto">
+                        {/* Close Button Inside Menu */}
+                        <button
                             onClick={() => setIsMobileMenuOpen(false)}
+                            className="absolute top-6 left-6 p-2 text-white/70 hover:text-white transition-colors"
+                            aria-label="סגור תפריט"
                         >
-                            קבל הצעת מחיר
-                        </Link>
-                    </nav>
+                            <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+
+                        {/* Navigation Links */}
+                        <nav className="flex flex-col gap-6 mb-12">
+                            {navItems.map((item, index) => (
+                                <Link
+                                    key={item.href}
+                                    href={item.href}
+                                    className="text-3xl font-bold text-white/90 hover:text-[#2E7CC4] transition-all duration-300 transform hover:translate-x-[-8px] text-right"
+                                    style={{ animationDelay: `${index * 0.1}s` }}
+                                    onClick={() => setIsMobileMenuOpen(false)}
+                                >
+                                    {item.label}
+                                </Link>
+                            ))}
+                        </nav>
+
+                        {/* Secondary Info / CTA */}
+                        <div className="mt-auto space-y-8">
+                            <div className="border-t border-white/10 pt-8">
+                                <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)}>
+                                    <Button
+                                        variant="primary"
+                                        className="w-full bg-[#2E7CC4] hover:bg-[#1A5A9C] text-white py-4 text-lg font-bold rounded-xl shadow-xl shadow-blue-500/20"
+                                    >
+                                        קבל הצעת מחיר
+                                    </Button>
+                                </Link>
+                            </div>
+
+                            {/* Contact Summary in Menu */}
+                            <div className="text-right space-y-2 text-white/50 text-sm">
+                                <p>מעוניינים בייעוץ מקצועי?</p>
+                                <a href="tel:03-1234567" className="block text-white font-medium dir-ltr">03-1234567</a>
+                            </div>
+                        </div>
+
+                        {/* Decorative Background Glow */}
+                        <div className="absolute -bottom-20 -left-20 w-64 h-64 bg-[#2E7CC4]/10 blur-[100px] rounded-full pointer-events-none" />
+                    </div>
                 </div>
             )}
         </header>
